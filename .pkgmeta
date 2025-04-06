@@ -1,0 +1,20 @@
+package-as: SharedMedia_SwirlUI
+
+# externals:
+#   Libs/LibStub:
+#     url: https://repos.wowace.com/wow/libstub/trunk
+#     tag: 1.0
+#   Libs/CallbackHandler-1.0:
+#     url: https://repos.wowace.com/wow/callbackhandler/trunk/CallbackHandler-1.0
+#     tag: latest
+#   Libs/LibSharedMedia-3.0:
+#     url: 
+
+manual-changelog:
+  filename: CHANGELOG.md
+  markup-type: markdown
+
+ignore:
+  - README.md
+  - UpdateMedia.ps1
+  - generate_changelog.sh
