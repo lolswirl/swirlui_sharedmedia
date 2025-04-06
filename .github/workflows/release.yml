@@ -35,6 +35,18 @@ jobs:
         with:
           fetch-depth: 0  # gets entire git history, needed for automatic changelogs
 
+      - name: Generate Changelog
+        id: Changelog
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: ./generate_changelog.sh
+
+      - name: Save Changelog in Variable
+        uses: Stanzilla/cat@2.0.2
+        id: readChanglog
+        with:
+          path: CHANGELOG.md
+
       # once cloned, we just run the GitHub Action
       - name: Package and release
         uses: BigWigsMods/packager@v2
