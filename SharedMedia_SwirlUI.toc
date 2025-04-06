@@ -1,0 +1,23 @@
+﻿## Interface: 11506, 40402, 110100
+## Title: |cff02fd98Swirl|rUI
+## X-Wago-ID: nKW1DYNE
+## Notes: |cff02fd98Swirl|rUI SharedMedia
+## Author: Swirl
+## IconTexture: Interface\AddOns\SharedMedia_SwirlUI\texture\logo
+
+SharedMedia_SwirlUI.lua
+libs\LibStub\LibStub.lua
+libs\CallbackHandler-1.0\CallbackHandler-1.0.lua
+libs\LibSharedMedia-3.0\LibSharedMedia-3.0.lua
+
+## Category-enUS: Media
+## Category-deDE: Medien
+## Category-esES: Medios
+## Category-esMX: Medios
+## Category-frFR: Médias
+## Category-itIT: Media
+## Category-koKR: 미디어
+## Category-ptBR: Mídia
+## Category-ruRU: Медиа
+## Category-zhCN: 材质
+## Category-zhTW: 材質

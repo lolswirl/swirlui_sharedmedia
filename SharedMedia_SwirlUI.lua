@@ -1,0 +1,59 @@
+﻿local LSM = LibStub("LibSharedMedia-3.0")
+
+-- -----
+-- BACKGROUND
+-- -----
+
+-- -----
+--  BORDER
+-- ----
+
+-- -----
+--   FONT
+-- -----
+LSM:Register('font', 'Swirl', [[Interface\Addons\SharedMedia_SwirlUI\font\Swirl.ttf]])
+
+-- -----
+--   SOUND
+-- -----
+LSM:Register('sound', '|cff00ff96Autumn|r', [[Interface\Addons\SharedMedia_SwirlUI\sound\Autumn.mp3]])
+LSM:Register('sound', '|cff00ff96Bloodlust|r', [[Interface\Addons\SharedMedia_SwirlUI\sound\Bloodlust.mp3]])
+LSM:Register('sound', '|cff00ff96Coins|r', [[Interface\Addons\SharedMedia_SwirlUI\sound\Coins.mp3]])
+LSM:Register('sound', '|cff00ff96Done|r', [[Interface\Addons\SharedMedia_SwirlUI\sound\Done.mp3]])
+LSM:Register('sound', '|cff00ff96Dwarf|r', [[Interface\Addons\SharedMedia_SwirlUI\sound\Dwarf.mp3]])
+LSM:Register('sound', '|cff00ff96PI|r', [[Interface\Addons\SharedMedia_SwirlUI\sound\PI.mp3]])
+LSM:Register('sound', '|cff00ff96Shadowmeld|r', [[Interface\Addons\SharedMedia_SwirlUI\sound\Shadowmeld.mp3]])
+LSM:Register('sound', '|cff00ff96Spatial Paradox|r', [[Interface\Addons\SharedMedia_SwirlUI\sound\Spatial Paradox.mp3]])
+LSM:Register('sound', '|cff00ff96Spring|r', [[Interface\Addons\SharedMedia_SwirlUI\sound\Spring.mp3]])
+LSM:Register('sound', '|cff00ff96Summer|r', [[Interface\Addons\SharedMedia_SwirlUI\sound\Summer.mp3]])
+LSM:Register('sound', '|cff00ff96Winter|r', [[Interface\Addons\SharedMedia_SwirlUI\sound\Winter.mp3]])
+
+-- -----
+--   KAZE SOUNDS
+-- -----
+LSM:Register('sound', '|cff00ff97Celestial Conduit Now |T5927619:16|t|r', [[Interface\Addons\SharedMedia_SwirlUI\sound\Kaze\Celestial Conduit Now.mp3]])
+LSM:Register('sound', '|cff00ff97Celestial Conduit Soon |T5927619:16|t|r', [[Interface\Addons\SharedMedia_SwirlUI\sound\Kaze\Celestial Conduit Soon.mp3]])
+LSM:Register('sound', '|cff00ff97Cocoon Now |T627485:16|t|r', [[Interface\Addons\SharedMedia_SwirlUI\sound\Kaze\Cocoon Now.mp3]])
+LSM:Register('sound', '|cff00ff97Cocoon Soon |T627485:16|t|r', [[Interface\Addons\SharedMedia_SwirlUI\sound\Kaze\Cocoon Soon.mp3]])
+LSM:Register('sound', '|cff00ff97Diffuse Magic Now |T775460:16|t|r', [[Interface\Addons\SharedMedia_SwirlUI\sound\Kaze\Diffuse Magic Now.mp3]])
+LSM:Register('sound', '|cff00ff97Diffuse Magic Soon |T775460:16|t|r', [[Interface\Addons\SharedMedia_SwirlUI\sound\Kaze\Diffuse Magic Soon.mp3]])
+LSM:Register('sound', '|cff00ff97Fort Brew Now |T615341:16|t|r', [[Interface\Addons\SharedMedia_SwirlUI\sound\Kaze\Fort Brew Now.mp3]])
+LSM:Register('sound', '|cff00ff97Fort Brew Soon |T615341:16|t|r', [[Interface\Addons\SharedMedia_SwirlUI\sound\Kaze\Fort Brew Soon.mp3]])
+LSM:Register('sound', '|cff00ff97Gateway Now |T607512:16|t|r', [[Interface\Addons\SharedMedia_SwirlUI\sound\Kaze\Gateway Now.mp3]])
+LSM:Register('sound', '|cff00ff97Gateway Soon |T607512:16|t|r', [[Interface\Addons\SharedMedia_SwirlUI\sound\Kaze\Gateway Soon.mp3]])
+LSM:Register('sound', '|cff00ff97Healthstones Now |T538745:16|t|r', [[Interface\Addons\SharedMedia_SwirlUI\sound\Kaze\Healthstones Now.mp3]])
+LSM:Register('sound', '|cff00ff97Healthstones Soon |T538745:16|t|r', [[Interface\Addons\SharedMedia_SwirlUI\sound\Kaze\Healthstones Soon.mp3]])
+LSM:Register('sound', '|cff00ff97Invoke Chi-Ji Now |T877514:16|t|r', [[Interface\Addons\SharedMedia_SwirlUI\sound\Kaze\Invoke Chi-Ji Now.mp3]])
+LSM:Register('sound', '|cff00ff97Invoke Chi-Ji Soon |T877514:16|t|r', [[Interface\Addons\SharedMedia_SwirlUI\sound\Kaze\Invoke Chi-Ji Soon.mp3]])
+LSM:Register('sound', '|cff00ff97Invoke Yu\'lon Now |T574571:16|t|r', [[Interface\Addons\SharedMedia_SwirlUI\sound\Kaze\Invoke Yu'lon Now.mp3]])
+LSM:Register('sound', '|cff00ff97Invoke Yu\'lon Soon |T574571:16|t|r', [[Interface\Addons\SharedMedia_SwirlUI\sound\Kaze\Invoke Yu'lon Soon.mp3]])
+LSM:Register('sound', '|cff00ff97Personals Now |T132361:16|t|r', [[Interface\Addons\SharedMedia_SwirlUI\sound\Kaze\Personals Now.mp3]])
+LSM:Register('sound', '|cff00ff97Personals Soon |T132361:16|t|r', [[Interface\Addons\SharedMedia_SwirlUI\sound\Kaze\Personals Soon.mp3]])
+LSM:Register('sound', '|cff00ff97Potion Now |T650640:16|t|r', [[Interface\Addons\SharedMedia_SwirlUI\sound\Kaze\Potion Now.mp3]])
+LSM:Register('sound', '|cff00ff97Potion Soon |T650640:16|t|r', [[Interface\Addons\SharedMedia_SwirlUI\sound\Kaze\Potion Soon.mp3]])
+LSM:Register('sound', '|cff00ff97Revival Now |T1020466:16|t|r', [[Interface\Addons\SharedMedia_SwirlUI\sound\Kaze\Revival Now.mp3]])
+LSM:Register('sound', '|cff00ff97Revival Soon |T1020466:16|t|r', [[Interface\Addons\SharedMedia_SwirlUI\sound\Kaze\Revival Soon.mp3]])
+
+-- -----
+--   STATUSBAR
+-- -----
