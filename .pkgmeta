@@ -18,3 +18,4 @@ ignore:
   - README.md
   - UpdateMedia.ps1
   - generate_changelog.sh
+  - icon_links.json
