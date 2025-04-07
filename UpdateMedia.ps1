@@ -188,14 +188,14 @@ Copy-Item -Path "$currentDir\statusbar" -Destination "$subfolderPath\statusbar" 
 Copy-Item -Path "$currentDir\texture" -Destination "$subfolderPath\texture" -Recurse -Force
 
 # Create the zip file
-$zipFile = "$currentDir\$folderName.zip"
-if (Test-Path $zipFile) {
-  Remove-Item -Force $zipFile
-}
-Compress-Archive -Path "$subfolderPath" -DestinationPath $zipFile -Force
+# $zipFile = "$currentDir\$folderName.zip"
+# if (Test-Path $zipFile) {
+#   Remove-Item -Force $zipFile
+# }
+# Compress-Archive -Path "$subfolderPath" -DestinationPath $zipFile -Force
 
-Write-Host "Files successfully registered"
-Write-Host "Zip file created at $zipFile"
+# Write-Host "Files successfully registered"
+# Write-Host "Zip file created at $zipFile"
 
 # Clean up
 Remove-Item -Recurse -Force $subfolderPath
