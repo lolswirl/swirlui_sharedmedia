@@ -1,9 +1,8 @@
 # SwirlUI SharedMedia
-mostly used for custom sounds on various effects such as shadowmeld, bloodlust, dwarf and specific kaze mrt reminders for spells and abilities like healthpot, personals, revival, invoke chi-ji, etc.
+created for custom sounds on various effects such as shadowmeld, bloodlust, dwarf plus specific kaze mrt reminders for spells and abilities like healthpot, personals, revival, invoke chi-ji, evangelism, etc.
 
-
-sounds created via [voicemaker.in](https://voicemaker.in)
-
+## Sound Creation
+created via [voicemaker.in](https://voicemaker.in)  
 setting used:
  - kaiya (f) / english
  - volume: 20db
@@ -11,3 +10,9 @@ setting used:
  - pitch: 0%
  - v2
  - 48000Hz mp3
+
+## Modifications
+
+new media can be added directly into their respective folders then executing `UpdateMedia.ps1`, which will automatically register new media entries into the addon  
+
+if creating new kaze cooldown callouts, enter the `name: iconId` pair of the spell into [icon_links.json](icon_links.json) to combine a cooldown audio file with its own icon
