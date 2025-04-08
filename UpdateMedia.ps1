@@ -8,15 +8,14 @@ function Trim {
   return $str.Trim()
 }
 
-$jsonPath = "icon_links.json"
+$jsonPath = "iconLinks.json"
 $jsonContent = Get-Content $jsonPath -Raw | ConvertFrom-Json
 
-# Convert PSCustomObject to Hashtable
+# Convert PSCustomObject to Hashtable, using the short name as the value
 $nameToIconMap = @{}
-foreach ($property in $jsonContent.PSObject.Properties) {
-  $nameToIconMap[$property.Name] = $property.Value
+foreach ($shortName in $jsonContent.ids.PSObject.Properties) {
+    $nameToIconMap[$shortName.Name] = $shortName.Value
 }
-
 
 # Set the current directory and folder name
 $currentDir = Get-Location
@@ -139,6 +138,7 @@ $myMediaContent += @(
 $soundFiles = Get-ChildItem -Path "..\$folderName\sound\Kaze\*.*"
 foreach ($file in $soundFiles) {
     $iconId = ""
+
     foreach ($key in $nameToIconMap.Keys) {
         if ($file.BaseName -like "*$key*") {
             $iconId = $nameToIconMap[$key]
