@@ -15,4 +15,4 @@ setting used:
 
 new media can be added directly into their respective folders then executing `UpdateMedia.ps1`, which will automatically register new media entries into the addon  
 
-if creating new kaze cooldown callouts, enter the `name: iconId` pair of the spell into [icon_links.json](icon_links.json) to combine a cooldown audio file with its own icon
+if creating new kaze cooldown callouts, enter the `name: iconId` pair as well as the `longName: shortName` pair, if it exists, of the spell into [iconLinks.json](iconLinks.json) to combine a cooldown audio file with its own icon and register it with a short name
