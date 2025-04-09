@@ -125,7 +125,18 @@ $myMediaContent += @(
 )
 $soundFiles = Get-ChildItem -Path "..\$folderName\sound\*.*"
 foreach ($file in $soundFiles) {
-  $myMediaContent += "LSM:Register('sound', '|cff00ff96$($file.BaseName)|r', [[Interface\Addons\$folderName\sound\$($file.Name)]])"
+  $iconId = ""
+  foreach ($key in $nameToIconMap.Keys) {
+      if ($file.BaseName -like "*$key*") {
+          $iconId = $nameToIconMap[$key]
+          break
+      }
+  }
+
+  $escapedBaseName = $file.BaseName -replace "'", "\'"
+  $prefix = if ($iconId) { "|T$($iconId):16|t" } else { "" }
+  
+  $myMediaContent += "LSM:Register('sound', '|cff00ff96$escapedBaseName ${prefix}|r', [[Interface\Addons\$folderName\sound\$($file.Name)]])"
 }
 
 # Add sound files

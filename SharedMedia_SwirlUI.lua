@@ -16,17 +16,17 @@ LSM:Register('font', 'Swirl', [[Interface\Addons\SharedMedia_SwirlUI\font\Swirl.
 -- -----
 --   SOUND
 -- -----
-LSM:Register('sound', '|cff00ff96Autumn|r', [[Interface\Addons\SharedMedia_SwirlUI\sound\Autumn.mp3]])
-LSM:Register('sound', '|cff00ff96Bloodlust|r', [[Interface\Addons\SharedMedia_SwirlUI\sound\Bloodlust.mp3]])
-LSM:Register('sound', '|cff00ff96Coins|r', [[Interface\Addons\SharedMedia_SwirlUI\sound\Coins.mp3]])
-LSM:Register('sound', '|cff00ff96Done|r', [[Interface\Addons\SharedMedia_SwirlUI\sound\Done.mp3]])
-LSM:Register('sound', '|cff00ff96Dwarf|r', [[Interface\Addons\SharedMedia_SwirlUI\sound\Dwarf.mp3]])
-LSM:Register('sound', '|cff00ff96PI|r', [[Interface\Addons\SharedMedia_SwirlUI\sound\PI.mp3]])
-LSM:Register('sound', '|cff00ff96Shadowmeld|r', [[Interface\Addons\SharedMedia_SwirlUI\sound\Shadowmeld.mp3]])
-LSM:Register('sound', '|cff00ff96Spatial Paradox|r', [[Interface\Addons\SharedMedia_SwirlUI\sound\Spatial Paradox.mp3]])
-LSM:Register('sound', '|cff00ff96Spring|r', [[Interface\Addons\SharedMedia_SwirlUI\sound\Spring.mp3]])
-LSM:Register('sound', '|cff00ff96Summer|r', [[Interface\Addons\SharedMedia_SwirlUI\sound\Summer.mp3]])
-LSM:Register('sound', '|cff00ff96Winter|r', [[Interface\Addons\SharedMedia_SwirlUI\sound\Winter.mp3]])
+LSM:Register('sound', '|cff00ff96Autumn |T3636843:16|t|r', [[Interface\Addons\SharedMedia_SwirlUI\sound\Autumn.mp3]])
+LSM:Register('sound', '|cff00ff96Bloodlust |T136012:16|t|r', [[Interface\Addons\SharedMedia_SwirlUI\sound\Bloodlust.mp3]])
+LSM:Register('sound', '|cff00ff96Coins |T4638725:16|t|r', [[Interface\Addons\SharedMedia_SwirlUI\sound\Coins.mp3]])
+LSM:Register('sound', '|cff00ff96Done |r', [[Interface\Addons\SharedMedia_SwirlUI\sound\Done.mp3]])
+LSM:Register('sound', '|cff00ff96Dwarf |T136225:16|t|r', [[Interface\Addons\SharedMedia_SwirlUI\sound\Dwarf.mp3]])
+LSM:Register('sound', '|cff00ff96PI |T135939:16|t|r', [[Interface\Addons\SharedMedia_SwirlUI\sound\PI.mp3]])
+LSM:Register('sound', '|cff00ff96Shadowmeld |T132089:16|t|r', [[Interface\Addons\SharedMedia_SwirlUI\sound\Shadowmeld.mp3]])
+LSM:Register('sound', '|cff00ff96Spatial Paradox |T5199645:16|t|r', [[Interface\Addons\SharedMedia_SwirlUI\sound\Spatial Paradox.mp3]])
+LSM:Register('sound', '|cff00ff96Spring |T3636844:16|t|r', [[Interface\Addons\SharedMedia_SwirlUI\sound\Spring.mp3]])
+LSM:Register('sound', '|cff00ff96Summer |T3636845:16|t|r', [[Interface\Addons\SharedMedia_SwirlUI\sound\Summer.mp3]])
+LSM:Register('sound', '|cff00ff96Winter |T3636846:16|t|r', [[Interface\Addons\SharedMedia_SwirlUI\sound\Winter.mp3]])
 
 -- -----
 --   KAZE SOUNDS
