@@ -127,7 +127,7 @@ $soundFiles = Get-ChildItem -Path "..\$folderName\sound\*.*"
 foreach ($file in $soundFiles) {
   $iconId = ""
   foreach ($key in $nameToIconMap.Keys) {
-      if ($file.BaseName -like "*$key*") {
+      if ($file.BaseName -match "\b$key\b") {
           $iconId = $nameToIconMap[$key]
           break
       }
@@ -151,7 +151,7 @@ foreach ($file in $soundFiles) {
     $iconId = ""
 
     foreach ($key in $nameToIconMap.Keys) {
-        if ($file.BaseName -like "*$key*") {
+        if ($file.BaseName -match "\b$key\b") {
             $iconId = $nameToIconMap[$key]
             break
         }
