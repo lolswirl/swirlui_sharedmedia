@@ -23,12 +23,12 @@ fi
 date=$( git log -1 --date=short --format="%ad" )
 url=$( git remote get-url origin | sed -e 's/^git@\(.*\):/https:\/\/\1\//' -e 's/\.git$//' )
 
-echo -ne "# [${version}](${url}/tree/${current}) ($date)\n\n[Full Changelog](${url}/compare/${previous}...${current})\n\n" > "CHANGELOG.md"
+echo -ne "# [${version}](${url}/tree/${current}) ($date)\n\n[full changelog](${url}/compare/${previous}...${current})\n\n" > "CHANGELOG.md"
 
 if [ "$version" = "$tag" ]; then # on a tag
   # Fetch release notes using GitHub CLI
   releaseNotes=$(gh release view "$tag" --json body -q ".body")
-  echo -ne "## Release Notes\n${releaseNotes}\n" >> "CHANGELOG.md"
+  echo -ne "## release notes\n${releaseNotes}\n" >> "CHANGELOG.md"
 fi
 
 # Create temporary file to store shortlog output
@@ -48,14 +48,14 @@ while IFS= read -r line; do
   commitMessage=$(echo "$line" | sed -e 's/^\s*[^ ]\+ //')
 
   # Check for commit suffixes
-  if echo "$line" | grep -q "\[Feature\]"; then
+  if echo "$line" | grep -q "register"; then
     # Remove suffix and add to features array
     featureCommits+=("- ${commitMessage//\[Feature\]/}")
   elif echo "$line" | grep -q "\[Bugfix\]"; then
     # Remove suffix and add to bugfixes array
     bugfixCommits+=("- ${commitMessage//\[Bugfix\]/}")
   elif echo "$line" | grep -q "\[Misc\]"; then
-    # Remove suffix and add to bugfixes array
+    # Remove suffix and add to misc array
     misCommits+=("- ${commitMessage//\[Misc\]/}")
   fi
 done < "$tempFile"
@@ -66,21 +66,21 @@ rm "$tempFile"
 # Write results to changelog
 {
   if [ ${#featureCommits[@]} -ne 0 ]; then
-    echo -ne "### Features\n"
+    echo -ne "### features\n"
     for commit in "${featureCommits[@]}"; do
       echo "$commit"
     done
   fi
 
   if [ ${#bugfixCommits[@]} -ne 0 ]; then
-    echo -ne "### Bug Fixes\n"
+    echo -ne "### bug fixes\n"
     for commit in "${bugfixCommits[@]}"; do
       echo "$commit"
     done
   fi
 
   if [ ${#misCommits[@]} -ne 0 ]; then
-    echo -ne "### Miscellaneous\n"
+    echo -ne "### miscellaneous\n"
     for commit in "${misCommits[@]}"; do
       echo "$commit"
     done
