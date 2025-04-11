@@ -192,7 +192,6 @@ Copy-Item -Path "$currentDir\border" -Destination "$subfolderPath\border" -Recur
 Copy-Item -Path "$currentDir\font" -Destination "$subfolderPath\font" -Recurse -Force
 Copy-Item -Path "$currentDir\sound" -Destination "$subfolderPath\sound" -Recurse -Force
 Copy-Item -Path "$currentDir\statusbar" -Destination "$subfolderPath\statusbar" -Recurse -Force
-Copy-Item -Path "$currentDir\texture" -Destination "$subfolderPath\texture" -Recurse -Force
 
 # Create the zip file
 # $zipFile = "$currentDir\$folderName.zip"

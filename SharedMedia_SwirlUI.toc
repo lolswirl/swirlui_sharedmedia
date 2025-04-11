@@ -3,7 +3,7 @@
 ## X-Wago-ID: nKW1DYNE
 ## Notes: |cff02fd98Swirl|rUI SharedMedia
 ## Author: Swirl
-## IconTexture: Interface\AddOns\SharedMedia_SwirlUI\texture\logo
+## IconTexture: Interface\AddOns\SharedMedia_SwirlUI\background\logo
 
 SharedMedia_SwirlUI.lua
 libs\LibStub\LibStub.lua
