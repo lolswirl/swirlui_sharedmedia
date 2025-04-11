@@ -13,6 +13,10 @@ setting used:
 
 ## Modifications
 
-new media can be added directly into their respective folders then executing `UpdateMedia.ps1`, which will automatically register new media entries into the addon  
+new media can be added directly into their respective folders, then by executing [updateMedia.sh](https://github.com/lolswirl/swirlui_sharedmedia/blob/master/updateMedia.sh), the script will automatically register new media entries into the addon.
 
-if creating new kaze cooldown callouts, enter the `name: iconId` pair as well as the `longName: shortName` pair, if it exists, of the spell into [iconLinks.json](iconLinks.json) to combine a cooldown audio file with its own icon and register it with a short name
+if creating new kaze cooldown callouts, enter the `name: iconId` pair as well as the `longName: shortName` pair, if it exists, of the spell into [iconLinks.json](https://github.com/lolswirl/swirlui_sharedmedia/blob/master/iconLinks.json) to combine a cooldown audio file with its own icon and register it with a short name
+
+## Special Thanks
+
+special thanks to [vaethryn](https://x.com/vaethryn/status/1868019620659019778) for creating the bad spec icons that are used in details or other places among my ui pack :3
