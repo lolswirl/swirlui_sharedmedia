@@ -3,6 +3,11 @@
 -- -----
 -- BACKGROUND
 -- -----
+LSM:Register('background', 'DPS', [[Interface\Addons\SharedMedia_SwirlUI\background\DPS.tga]])
+LSM:Register('background', 'Healer', [[Interface\Addons\SharedMedia_SwirlUI\background\Healer.tga]])
+LSM:Register('background', 'logo', [[Interface\Addons\SharedMedia_SwirlUI\background\logo.tga]])
+LSM:Register('background', 'spec_icons_bad', [[Interface\Addons\SharedMedia_SwirlUI\background\spec_icons_bad.tga]])
+LSM:Register('background', 'Tank', [[Interface\Addons\SharedMedia_SwirlUI\background\Tank.tga]])
 
 -- -----
 --  BORDER
