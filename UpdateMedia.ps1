@@ -81,6 +81,12 @@ $myMediaFile = "..\$folderName\SharedMedia_SwirlUI.lua"
 $myMediaContent = @(
   'local LSM = LibStub("LibSharedMedia-3.0")',
   '',
+  'local BACKGROUND = LSM.MediaType.BACKGROUND',
+  'local BORDER = LSM.MediaType.BORDER',
+  'local FONT = LSM.MediaType.FONT',
+  'local SOUND = LSM.MediaType.SOUND',
+  'local STATUSBAR = LSM.MediaType.STATUSBAR'
+  '',
   '-- -----',
   '-- BACKGROUND',
   '-- -----'
@@ -89,7 +95,7 @@ $myMediaContent = @(
 # Add background files
 $backgroundFiles = Get-ChildItem -Path "..\$folderName\background\*.*"
 foreach ($file in $backgroundFiles) {
-  $myMediaContent += "LSM:Register('background', '$($file.BaseName)', [[Interface\Addons\$folderName\background\$($file.Name)]])"
+  $myMediaContent += "LSM:Register(BACKGROUND, '$($file.BaseName)', [[Interface\Addons\$folderName\background\$($file.Name)]])"
 }
 
 # Add border files
@@ -101,7 +107,7 @@ $myMediaContent += @(
 )
 $borderFiles = Get-ChildItem -Path "..\$folderName\border\*.*"
 foreach ($file in $borderFiles) {
-  $myMediaContent += "LSM:Register('border', '$($file.BaseName)', [[Interface\Addons\$folderName\border\$($file.Name)]])"
+  $myMediaContent += "LSM:Register(BORDER, '$($file.BaseName)', [[Interface\Addons\$folderName\border\$($file.Name)]])"
 }
 
 # Add font files
@@ -113,7 +119,7 @@ $myMediaContent += @(
 )
 $fontFiles = Get-ChildItem -Path "..\$folderName\font\*.ttf"
 foreach ($file in $fontFiles) {
-  $myMediaContent += "LSM:Register('font', '$($file.BaseName)', [[Interface\Addons\$folderName\font\$($file.Name)]])"
+  $myMediaContent += "LSM:Register(FONT, '$($file.BaseName)', [[Interface\Addons\$folderName\font\$($file.Name)]])"
 }
 
 # Add sound files
@@ -136,7 +142,7 @@ foreach ($file in $soundFiles) {
   $escapedBaseName = $file.BaseName -replace "'", "\'"
   $prefix = if ($iconId) { "|T$($iconId):16|t" } else { "" }
   
-  $myMediaContent += "LSM:Register('sound', '|cff00ff96$escapedBaseName ${prefix}|r', [[Interface\Addons\$folderName\sound\$($file.Name)]])"
+  $myMediaContent += "LSM:Register(SOUND, '|cff00ff96$escapedBaseName ${prefix}|r', [[Interface\Addons\$folderName\sound\$($file.Name)]])"
 }
 
 # Add sound files
@@ -159,7 +165,7 @@ foreach ($file in $soundFiles) {
 
     $escapedBaseName = $file.BaseName -replace "'", "\'"
     $prefix = if ($iconId) { "|T$($iconId):16|t" } else { "" }
-    $myMediaContent += "LSM:Register('sound', '|cff00ff97$escapedBaseName ${prefix}|r', [[Interface\Addons\$folderName\sound\Kaze\$($file.Name)]])"
+    $myMediaContent += "LSM:Register(SOUND, '|cff00ff97$escapedBaseName ${prefix}|r', [[Interface\Addons\$folderName\sound\Kaze\$($file.Name)]])"
 }
 
 # Add statusbar files
@@ -171,7 +177,7 @@ $myMediaContent += @(
 )
 $statusbarFiles = Get-ChildItem -Path "..\$folderName\statusbar\*.*"
 foreach ($file in $statusbarFiles) {
-  $myMediaContent += "LSM:Register('statusbar', '$($file.BaseName)', [[Interface\Addons\$folderName\statusbar\$($file.Name)]])"
+  $myMediaContent += "LSM:Register(STATUSBAR, '$($file.BaseName)', [[Interface\Addons\$folderName\statusbar\$($file.Name)]])"
 }
 
 $myMediaContent | Out-File -FilePath $myMediaFile -Encoding UTF8
