@@ -48,15 +48,15 @@ while IFS= read -r line; do
   commitMessage=$(echo "$line" | sed -e 's/^\s*[^ ]\+ //')
 
   # Check for commit suffixes
-  if echo "$line" | grep -q "register"; then
+  if echo "$line" | grep -q "\[feature\]"; then
     # Remove suffix and add to features array
-    featureCommits+=("- ${commitMessage//\[Feature\]/}")
-  elif echo "$line" | grep -q "\[Bugfix\]"; then
+    featureCommits+=("- ${commitMessage//\[feature\]/}")
+  elif echo "$line" | grep -q "\[bugfix\]"; then
     # Remove suffix and add to bugfixes array
-    bugfixCommits+=("- ${commitMessage//\[Bugfix\]/}")
-  elif echo "$line" | grep -q "\[Misc\]"; then
+    bugfixCommits+=("- ${commitMessage//\[bugfix\]/}")
+  elif echo "$line" | grep -q "\[misc\]"; then
     # Remove suffix and add to misc array
-    misCommits+=("- ${commitMessage//\[Misc\]/}")
+    misCommits+=("- ${commitMessage//\[misc\]/}")
   fi
 done < "$tempFile"
 
