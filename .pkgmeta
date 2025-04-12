@@ -16,6 +16,6 @@ manual-changelog:
 
 ignore:
   - README.md
-  - UpdateMedia.ps1
+  - updateMedia.sh
   - generate_changelog.sh
-  - icon_links.json
+  - iconLinks.json
