@@ -19,3 +19,4 @@ ignore:
   - updateMedia.sh
   - generate_changelog.sh
   - iconLinks.json
+  - "background/bad icons/png/*"
