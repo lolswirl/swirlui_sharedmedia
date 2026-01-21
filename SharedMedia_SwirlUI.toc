@@ -1,4 +1,4 @@
-﻿## Interface: 110200
+﻿## Interface: 120000,120001
 ## Title: |cff02fd98Swirl|rUI Media
 ## X-Wago-ID: nKW1DYNE
 ## Notes: |cff02fd98Swirl|rUI SharedMedia
