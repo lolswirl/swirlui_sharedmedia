@@ -1,4 +1,4 @@
-﻿## Interface: 120000,120001
+﻿## Interface: 120005
 
 ## Title: |cff02fd98Swirl|rUI Media
 ## Notes: |cff02fd98Swirl|rUI SharedMedia
